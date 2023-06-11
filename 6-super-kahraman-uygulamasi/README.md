@@ -1,4 +1,4 @@
-# araba-uygulamasi
- HTML & CSS ile oluşturulmuş animasyonlu araba website uygulama
+# super-kahraman-uygulamasi
+ HTML & CSS ile oluşturulmuş açılan kart animasyonlu süper kahraman uygulaması
 
-Proje Linki :
+Proje Linki : https://lovely-daffodil-da0b5b.netlify.app/
