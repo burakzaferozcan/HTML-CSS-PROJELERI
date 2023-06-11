@@ -1,0 +1,160 @@
+/* CSS BASE */
+:root {
+    --base-font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+}
+
+::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+}
+
+/* CSS BASE */
+
+
+/* <!-- HEADER START --> */
+.header-wrapper {
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 18vh;
+    background-color: #1e2227;
+}
+
+.header-right {
+    display: flex;
+    column-gap: 1.7rem;
+    align-items: center;
+}
+
+.header-right a i {
+    font-size: 2.6rem;
+    color: white;
+}
+
+/* <!-- HEADER END --> */
+
+/* <!-- SECTİON START --> */
+
+.section-wrapper{
+    display: flex;
+    height: 82vh;
+    color: white;
+    
+}
+.section-left,
+.section-right{
+    flex-basis: 50%;
+}
+.section-left{
+    padding-left: 8%;
+    background-color: #1e2227;
+}
+.section-left h1{
+    font-size: 7.4rem;
+    line-height: 10rem;
+}
+.section-left p{
+    padding-right: 1rem;
+    line-height: 2rem;
+    font-size: 2rem;
+}
+.price{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    font-size: 2rem;
+}
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    column-gap: 1rem;
+}
+.buttons a{
+    text-decoration: none;
+    color: white;
+    padding: 1.8rem 5rem;
+    background-color: red;
+    font-size: 1.8rem;
+    transition: all ease-in-out 0.5s;
+}
+.buttons a:hover{
+    transform: translateY(-1rem);
+    background-color: rgb(119, 0, 0);
+}
+/* <!-- SECTİON LEFT END --> */
+
+/* <!-- SECTİON RİGHT START --> */
+
+.section-right{
+    background-color: red;
+}
+.section-right .big-image{
+    display: flex;
+justify-content: center;
+margin-top: 5rem;
+}
+.big-image img{
+    width: 80%;
+    transform: rotate(-20deg);
+    transition: 0.5s;
+}
+.big-image img:hover{
+    transform: rotate(0) translate(-2rem,1rem);
+}
+
+.small-image-row{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6rem;
+
+}
+.small-image-row .small-image{
+    width: 8rem;
+    height: 8rem;
+    background-color: aqua;
+    
+}
+.small-image-row .small-image:nth-child(1){
+    background-color: #bc121f;
+}
+.small-image-row .small-image:nth-child(2){
+    background-color: #0044d0;
+}
+.small-image-row .small-image:nth-child(3){
+    background-color: #009b00;
+}
+.small-image-row .small-image:nth-child(4){
+    background-color: #00B0AF;
+}
+.small-image-row .small-image img{
+    width: 120px;
+    transform: rotate(-20deg);
+    transition: 0.5s;
+    
+    
+}
+.small-image-row .small-image img:hover{
+     transform: rotate(0) translate(-2rem,1rem);
+}
+/* <!-- SECTİON END --> */
+

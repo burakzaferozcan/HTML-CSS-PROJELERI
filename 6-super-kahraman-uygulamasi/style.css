@@ -1,0 +1,174 @@
+/* CSS BASE */
+:root {
+    --base-font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+}
+
+::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+}
+
+/* CSS BASE */
+body{
+    background-color: black;
+    color: white;
+    margin: 0 5rem;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 15rem;
+}
+header h1{
+    font-size: 4.5rem;
+}
+.section{
+    width: 100%;
+    min-height: calc(100vh - 15rem);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10rem;
+}
+
+.card-wrapper{
+    cursor: pointer;
+    width: 30rem;
+    height: 30rem;
+    background-color: rgb(219, 56, 56);
+    border-radius: 50%;
+    transition: all ease-in-out 0.5s;
+}
+.card-wrapper:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.1);
+}
+.section:hover .card-wrapper{
+    filter: blur(0.5rem);
+}
+.section:hover .card-wrapper:hover{
+    filter: blur(0);
+}
+
+.card-wrapper:hover .card-text{
+    transform: translateX(-8rem);
+    opacity: 1;
+}
+.card-wrapper:hover .card-image{
+    transform: translateX(8rem);
+
+}
+.card{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.card-text{
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    margin: auto;
+    opacity: 0;
+    transition: all ease-in-out 0.7s;
+    width: 15rem;
+}
+
+.card-text h2{
+    font-size: 3.9rem;
+    display: flex;
+}
+.card-text p{
+    font-size: 1.6rem;
+}
+.card-text img{
+    width: 3.9rem;
+    height: 3.9rem;
+}
+.card-image{
+    flex-basis: 50%;
+    display: flex;
+    position: absolute;
+    margin: auto;
+
+    opacity: 1;
+    transition: all ease-in-out 0.7s;
+}
+.card-image img{
+    height: 30rem;
+}
+
+/* RESPONSİVE START */
+@media(max-width:1076px){
+    .section{
+        margin-top: 20rem;
+        flex-direction: column;
+        row-gap: 20rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    
+ 
+    .card-text{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 4rem;
+    }
+    .card-wrapper:hover .card-text{
+        transform: translateY(-12rem);
+        opacity: 1;
+    }
+    .card-wrapper:hover .card-image{
+        transform: translateY(12rem);
+    
+    }
+    
+}
+@media(max-width:600px){
+    header h1{
+        font-size: 2.5rem;
+    }
+    body{
+        margin: 0 1rem;
+    }
+}
+@media(max-width:335px){
+    header h1,
+    .card-text h2{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .card-wrapper{
+        width: 15rem;
+        height: 15rem;
+    }
+    .card-image img{
+        height: 15rem;
+    }
+    .card-text{
+        padding-bottom: 0;
+    }
+}
+
+
+/* RESPONSİVE END */

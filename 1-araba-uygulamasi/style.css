@@ -1,0 +1,238 @@
+:root{
+    --base-font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: var(--base-font-size);
+}
+
+::-webkit-scrollbar{
+    display: auto;
+    width: 0;
+}
+::-webkit-scrollbar-thumb{
+    background-color: none;
+    border-radius: 0rem;
+}
+body{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(images/bg.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.container{
+    margin: 0 10rem;
+}
+p{
+    font-size: 1rem;
+    color: white;
+    line-height: 2.5rem;
+}
+.btn{
+    font-size: 1.2rem;
+    padding: 1.2rem 2.8rem;
+    border-radius: 5rem;
+    border: 1px solid red;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+    font-weight: 700;
+}
+.btn:hover{
+    background-color: black;
+    color: rgb(255, 0, 0);
+}
+
+/* HEADER START */
+.header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 12vh;
+    align-items: center;
+}
+.header-right{
+    column-gap: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+.header-right ul{
+    display: flex;
+    align-items: center;
+    column-gap: 1.5rem;
+}
+.header-right ul li{
+    list-style: none;
+
+}
+.header-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    transition: all 0.5s;
+}
+.header-right a:hover{
+    color: red;
+}
+.header-right .bi-list{
+    font-size: 2rem;
+}
+
+/* HEADER END */
+
+
+/* SECTİON START */
+/* SECTİON LEFT START */
+.section-wrapper{
+    display: flex;
+    align-items: center;
+    height: 88vh;
+    column-gap: 1rem;
+    color: white;
+
+}
+.section{
+    flex-basis: 50%;
+}
+.section  h1{
+    line-height: 15rem;
+    font-size: 10rem;
+}
+.section .h{
+    border-bottom: 2px solid white;
+}
+.section  .desc{
+    font-size: 1.6rem;
+}
+/* SECTİON LEFT END */
+
+/* SECTİON RİGHT START */
+.section .cards{
+    max-width: 50rem;
+    margin: auto;
+    margin-left: 4rem;
+}
+.section .card{
+    margin: 1rem;
+    border: 1px solid rgb(255, 0, 0);
+    border-radius: 1rem;
+    display: inline-block;
+    width: 20rem;
+    height: 23rem;
+    position: relative;
+    transition: 0.5s;
+}
+.section .card:hover{
+    transform: translateY(-1rem);
+    border: rgb(255, 255, 255) 1px solid;
+}
+.section .card-1{
+background-image: url(images/pic-1.png);
+    background-position: center;
+    background-size: cover;
+}
+.section .card-2{
+background-image: url(images/pic-2.png);
+    background-position: center;
+    background-size: cover;
+}
+.section .card-3{
+background-image: url(images/pic-3.png);
+    background-position: center;
+    background-size: cover;
+}
+.section .card-4{
+background-image: url(images/pic-4.png);
+    background-position: center;
+    background-size: cover;
+}
+.card-top{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 6rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    line-height: 0.5rem;
+}
+.card-top h5{
+    font-size: 1.4rem;
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+.card-top p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    margin-left: 0.6rem;
+}
+.card-bottom{
+    position: absolute;
+    bottom: 1.5rem;
+    left: 2rem
+}
+
+/* SECTİON RİGHT END */
+
+/* SECTİON END */
+
+
+
+
+/* RESPONSİVE START */
+@media(max-width: 1175px){
+
+    .container{
+        margin: 0 10rem;
+    }
+    .section-wrapper {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5rem;
+    }
+    .section h1{
+        display: flex;
+        justify-content: center;
+        font-size: 7rem;
+    }
+    .section p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .section .btn{
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+    }
+}
+@media(max-width: 683px){
+    .container{
+        margin: 0 1rem;
+    }
+.section h1{
+    font-size: 5rem;
+}
+.section .cards{
+    display: grid;
+    margin: auto;
+
+}
+}
+
+@media(max-width: 445px){
+    .header-right ul{
+        display: none;
+    }
+}
+
+/* RESPONSİVE END */

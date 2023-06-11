@@ -1,0 +1,361 @@
+/* CSS BASE */
+:root {
+    --base-font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--base-font-size);
+}
+
+::-webkit-scrollbar {
+    display: auto;
+    width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: none;
+    border-radius: 0rem;
+}
+
+/* CSS BASE */
+/* HEADER START */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 5px;
+}
+header .logo{
+    display: flex;
+    align-items: center;
+}
+header .logo h1 a{
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.logo-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo .circle{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 5rem;
+    margin-right: 0.5rem;
+}
+header .logo .logo-circle .circle-1{
+    background-color: #4F93A6;
+    margin-top: 1.5rem;
+    margin-right: 0;
+
+}
+
+header .logo .logo-circle .circle-2{
+    background-color: #887a9c;
+    margin-bottom: 0.2rem;
+}
+/* HEADER END */
+
+/* ABOUT START */
+.about{
+    margin: 8rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.about img{
+    margin-top: 2rem;
+    height: 11rem;
+    width: 11rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+    
+.photo-group-1,
+.photo-group-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.photo-group-1 img{
+    transition: 0.5s all ease-in-out;
+}
+.photo-group-1 img:hover{
+    transform: translateY(-1rem);
+}
+.photo-group-2 img{
+    transition: 0.5s all ease-in-out;
+}
+.photo-group-2 img:hover{
+    transform: translateY(1rem);
+}
+
+.photo-col-2{
+    margin-top: -8rem;
+}
+.photo-col-5{
+    margin-bottom: -8rem;
+}
+.about-center{
+    width: 900px;
+}
+
+.about-center h2{
+    font-size: 5rem;
+    font-weight: 900;
+    font-weight: bold;
+}
+.about-center p{
+    margin: 2rem 2rem;
+    font-size: 2rem;
+    color: rgb(136, 136, 136);
+}
+.about-center .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+}
+.about-center .btn a{
+    padding: 1.5rem 3rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    
+}
+.about-center .btn span{
+    color: rgba(255, 255, 255, 0.507);
+}
+.about-center .btn .a1{
+    background-color: #4F93A6;
+    transition: ease-in-out 0.5s;
+}
+.about-center .btn .a1:hover{
+    background-color: #1883a0;
+}
+.about-center .btn .a2{
+    background-color: #887a9c;
+    
+    transition: ease-in-out 0.5s;
+}
+.about-center .btn .a2:hover{
+    background-color: #786297;
+    
+}
+
+
+
+/* ABOUT END */
+
+
+.number{
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+    
+}
+
+.number-line{
+    border: 1px solid rgb(226, 226, 226);
+    height: 6rem;
+    cursor: pointer;
+}
+.number-circle{
+    border: 2px solid rgb(226, 226, 226);
+    border-radius: 5rem;
+    padding: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(196, 196, 196);
+    cursor: pointer;
+}
+section{
+    margin: 10rem 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.section-photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6rem;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+}
+.section-photo img{
+    width: 20rem;
+    margin: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+section h4{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1883a0;
+    letter-spacing: 0.2rem;
+}
+section h2{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+    margin: 1.6rem 0;
+}
+section p{
+    font-size: 1.4rem;
+    color: rgb(196, 196, 196);
+    letter-spacing: 0.2rem;
+}
+footer{
+    margin-top: 10rem;
+    background-color: #4F93A6;
+    height: 30rem;
+    width: 100%;
+}
+.footer-photo{
+    background-image: url(footer2.jpg);
+    height: 30rem;
+    width: 100%;
+    position: absolute;
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.4;
+}
+.footer-line{
+    display: flex;
+    align-items: center;
+    height: 30rem;
+    position: relative;
+    justify-content: space-between;
+    margin: 0 7rem;
+    flex-wrap: wrap;
+}
+.footer-line h2{
+    font-size: 2.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 3.5rem;
+}
+.footer-line p{
+    font-size: 1.4rem;
+    color: white;
+    font-weight: bold;
+    line-height: 2rem;
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+.footer-line a{
+    padding: 1.5rem 3rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    background-color: #887a9c;
+    transition: ease-in-out 0.5s;
+    
+}
+.footer-line a:hover{
+    background-color: #786297;
+    
+}
+    
+
+
+@media(max-width:1034px){
+     .about img{
+        width: 9rem;
+        height: 9rem;
+
+     }
+     .about h2{
+        font-size: 4rem;
+     }
+     .about p{
+        font-size: 1.6rem;
+     }
+}
+@media(max-width:890px){
+    .footer-line{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
+@media(max-width:797px){
+    .about{
+        flex-wrap: wrap;
+    }
+}
+@media(max-width:508px){
+    section{
+        margin: 10rem 3rem;
+    }
+}
+@media(max-width:391px){
+    .footer-line{
+        margin: 0 0.2rem;
+    }
+    .footer-line br{
+        display: none;
+    }
+}
+@media(max-width:274px){
+    .about img{
+        width: 6rem;
+        height: 6rem;
+
+     }
+     h2{
+        font-size: 3rem;
+     }
+     p{
+        font-size: 1.4rem;
+     }
+}
+@media(max-width:233px){
+    .section-photo img{
+        width: 150px;
+    }
+    .footer-line h2{
+        font-size: 2rem;
+    }
+    .footer-line p{
+        font-size: 1.4rem;
+    }
+    .about-center h2{
+        font-size: 2.5rem;
+    }
+    .about-center p{
+        font-size: 1.4rem;
+    }
+}
+
