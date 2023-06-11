@@ -1,4 +1,4 @@
-# araba-uygulamasi
- HTML & CSS ile oluşturulmuş animasyonlu araba website uygulama
+# egghead.io-arayuz-klonu
+ HTML & CSS ile oluşturulmuş egghead.io responsive website arayüz klonu
 
-Proje Linki :
+Proje Linki : https://sage-fairy-b3a04d.netlify.app/
