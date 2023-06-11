@@ -1,4 +1,4 @@
-# araba-uygulamasi
- HTML & CSS ile oluşturulmuş animasyonlu araba website uygulama
+# animasyonlu-ayakkabi-website
+ HTML & CSS ile oluşturulmuş animasyonlu ayakkabı website uygulaması
 
-Proje Linki :
+Proje Linki : https://ayakkabi-website.netlify.app/
