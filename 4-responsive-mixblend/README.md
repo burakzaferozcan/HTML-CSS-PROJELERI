@@ -1,4 +1,4 @@
-# araba-uygulamasi
- HTML & CSS ile oluşturulmuş animasyonlu araba website uygulama
+# responsive-mixblend
+ HTML & CSS ile oluşturulmuş mix-blend uygulanmış responsive website uygulamasi.
 
-Proje Linki :
+Proje Linki : https://lovely-paprenjak-632fc3.netlify.app/
