@@ -1,0 +1,101 @@
+/* CSS BASE */
+:root {
+  --base-font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none !important;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: var(--base-font-size);
+}
+::-webkit-scrollbar {
+  display: auto;
+  width: 0;
+}
+::-webkit-scrollbar-thumb {
+  background-color: none;
+  border-radius: 0rem;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* CSS BASE */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(145, 145, 145);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  flex-direction: column;
+  row-gap: 2rem;
+  text-align: center;
+}
+span {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+}
+.circle::before,
+.circle::after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: 4rem solid transparent;
+  border-radius: 50%;
+}
+.circle::before {
+  border-bottom: 4rem solid rgb(61, 61, 61);
+  animation: 2s rotateBefore ease-out infinite 0.5s;
+}
+.circle::after {
+  border-left: 4rem solid rgb(90, 90, 90);
+  animation: 2s rotateAfter ease-in infinite;
+}
+@keyframes rotateAfter {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateBefore {
+  0%,
+  25% {
+    transform: rotate(0deg);
+  }
+  50%,
+  75% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
